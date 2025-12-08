@@ -6,6 +6,17 @@ function getData(dataId) {
         }, 2000);
     })
 }
+// async function getAllData(){
+//     console.log("Data 1 Loading....")
+//     await getData(1);
+//     console.log("Data 2 Loading....")
+//     await getData(2);
+//     console.log("Data 3 Loading....")
+//     await getData(3);  
+//     console.log("Data 4  Loading....")
+//     await getData(4);
+// }
+// getAllData();
 //CallBack Hell
 // console.log("Data 1 Loading....")
 // getData(1,()=>{
