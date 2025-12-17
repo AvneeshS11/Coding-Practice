@@ -1,0 +1,18 @@
+.main{
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.price{
+    border-radius: 10px;
+    background-color: gold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.price :nth-child(odd){
+    text-decoration:line-through;
+}
