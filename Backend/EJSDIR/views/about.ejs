@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INBUILT CSS -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .about {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .about-card {
+            max-width: 800px;
+            background: #020617;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            animation: fadeUp 1.2s ease;
+        }
+
+        .about-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about-card span {
+            color: #38bdf8;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 15px 0;
+            color: #cbd5f5;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills span {
+            display: inline-block;
+            margin: 8px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #1e293b;
+            font-size: 0.9rem;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            background: #38bdf8;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .about-card h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="about" id="About">
+        <div class="about-card">
+            <h1>About <span>Me</span></h1>
+            <p>
+                Hi, I'm Avneesh 👋
+                A passionate Frontend Developer learning React and Data Structures.
+                I love building clean UI and improving my logical thinking through DSA.
+            </p>
+
+            <p id="extraText" style="display:none;">
+                Currently, I focus on JavaScript, React, and problem solving in C++.
+                My goal is to become a strong Software Engineer.
+            </p>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>C++</span>
+                <span>DSA</span>
+            </div>
+
+            <button onclick="toggleText()">Read More</button>
+        </div>
+    </section>
+
+    <!-- INBUILT JS -->
+    <script>
+        function toggleText() {
+            const text = document.getElementById("extraText");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

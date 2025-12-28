@@ -12,7 +12,7 @@ const Loteryy = ({ size, winSum }) => {
         <div className='Lotery'>
             <h1>LOTERY TICKET</h1>
             <Ticket ticket={ticket} />
-            {total  && <h2>Congratulations, you are the winner! 🎉🏆</h2>}
+            {total  && <h2>Congratulations, you won!🎉🏆</h2>}
             <br />
             <br />
             <button onClick={refresh}>Buy new Ticket</button>
